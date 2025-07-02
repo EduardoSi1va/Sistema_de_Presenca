@@ -12,7 +12,7 @@ Projeto desenvolvido para a disciplina [SSC0180 - Eletrônica para Computação]
 # Explicação do Projeto
 Deve ser desenvolvido o software e o hardware de um projeto à escolha do grupo, que utilize Arduino/ESP32.<br>
 Optamos por desenvolver um sistema de controle de presença através de tags e sensores RFID. Seu funcionamento ocorre da seguinte maneira:<br>
-À cada tag foi associado um nome e um número USP, de maneira que cada tag representa um aluno. Aproximá-la ao sensor ativa o sinal sonoro (buzzer) e exibe as informações do aluno em questão, conferindo presença a este. No software é possível consultar quais alunos estão presentes, de modo que sejam exibidos na tela seus nomes.
+À cada tag foi associado um nome e uma turma, de maneira que cada tag representa um aluno. Aproximá-la ao sensor ativa o sinal sonoro (buzzer) e exibe as informações do aluno em questão, conferindo presença a este. Após cada tag ser escaneada, as informações do aluno em questão são apresentadas em um display OLED de padrão de comunicação i2C, onde ficam por 5 segundos. No monitor serial é possível consultar quais alunos estão presentes ao enviar a frase "Quantos alunos presentes", de modo que sejam exibidos no monitor seus nomes. O cadastro dos alunos deve ser feito através do código, alterando o array "students[]"  acrescentando o UID das tags novas. Para ler o UID de uma tag, deve-se retirar o comentário na função dumpNewUID() na main e escanear a tag nova(o UID dessa tag será mostrado no monitor serial).
 
 # Lista dos Componentes
 | Componente | Quantidade | Preço |
