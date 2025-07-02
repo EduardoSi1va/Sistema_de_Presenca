@@ -51,7 +51,7 @@ Não é possível elaborar o circuito no tinkercad pois este software não conta
 
 
 # Vídeo do funcionamento
-Link do youtube: 
+Link do youtube: https://youtube.com/shorts/wO78POOzBGw?feature=share
 
 # Código Utilizado
 
