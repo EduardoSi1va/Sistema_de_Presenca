@@ -81,3 +81,18 @@ Agora, temos tudo o que precisamos para calcular a resistência máxima -> R * I
 Por fim, o resistor de 4,4kΩ em série com o LED foi obtido ao unir dois resistores de 2,2kΩ em série; enquanto o resistor de 50Ω conectado ao coletor do transistor foi construído a partir da ligação em paralelo de dois resistores de 100Ω.
 
 
+| Módulo/Função          | Pino no Módulo | Pino no Arduino Uno | Observações                |
+|------------------------|----------------|---------------------|----------------------------|
+| **RC522 RFID**         | SDA / SS       | D10                 | `SS_PIN` (SPI SS)          |
+|                        | SCK            | D13                 | SPI CLK                    |
+|                        | MOSI           | D11                 | SPI MOSI                   |
+|                        | MISO           | D12                 | SPI MISO                   |
+|                        | RST            | D9                  | `RST_PIN`                  |
+|                        | 3 V3           | 3.3 V               | Alimentação 3.3 V          |
+|                        | GND            | GND                 | Terra                      |
+| **OLED SSD1306 (I²C)** | SDA            | A4                  | Linha de dados I²C         |
+|                        | SCL            | A5                  | Clock I²C                  |
+|                        | VCC            | 5 V                 | Módulo compatível 5 V      |
+|                        | GND            | GND                 | Terra                      |
+| **Buzzer passivo**     | +              | D7                  | `BUZZER_PIN`               |
+|                        | −              | GND                 | Terra                      |
