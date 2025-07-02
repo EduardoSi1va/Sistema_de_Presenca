@@ -1,7 +1,7 @@
 # Sistema de Presença
 Projeto desenvolvido para a disciplina [SSC0180 - Eletrônica para Computação], ministrada pelo Professor Eduardo do Valle Simôes.
 
-# Integrantes do Grupo 13:
+# Integrantes do Grupo 13
 | Aluno | Nº USP |
 |---|---|
 | André Campanholo Paschoalini | 14558061 |
@@ -53,7 +53,8 @@ Não é possível elaborar o circuito no tinkercad pois este software não conta
 # Vídeo do funcionamento
 Link do youtube: 
 
-# Código Utilizado:
+# Código Utilizado
+
 ```
 #include <SPI.h>
 #include <MFRC522.h>
