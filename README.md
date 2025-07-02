@@ -119,7 +119,7 @@ void setup() {
 void loop() {
   checkRFID();
   checkSerialInput();
- // dumpNewUID();
+ // dumpNewUID();     //para descobrir UID de uma nova tag, descomente essa linha e veja a tag ao escanear no monitor serial
 }
 
 /* ------------------- RFID ------------------- */
@@ -133,7 +133,7 @@ void checkRFID() {
     if (compareUID(rfid.uid.uidByte, students[i].uid)) {
       if (!students[i].present) {
         students[i].present = true;
-        showOnOLED(students[i].name, students[i].section, true);
+        showOnOLED(students[i].name, students[i].section, true);    //funçao checa se aluno não estava presente e setta ele como presente. depois printa no serial nome do aluno e status
         Serial.print(F("Marcado Presente: "));
       } else {
         showOnOLED(students[i].name, students[i].section, false);
@@ -155,7 +155,7 @@ bool compareUID(byte* a, byte* b) {
 }
 
 /* ------------------- OLED ------------------- */
-void showOnOLED(const char* name, const char* section, bool firstTime) {
+void showOnOLED(const char* name, const char* section, bool firstTime) {  //configuração do display OLED para mostrar status do aluno
   display.clearDisplay();
   display.setCursor(0, 0);
   display.print(F("Nome: "));
@@ -176,7 +176,7 @@ void showWelcome() {
 }
 
 /* ------------------- Serial ------------------- */
-void checkSerialInput() {
+void checkSerialInput() {   //Checa se comando para mostrar chamada é dado
   while (Serial.available()) {
     char c = Serial.read();
     if (c == '\n') {
@@ -192,7 +192,7 @@ void checkSerialInput() {
 }
 
 void showAttendance() {
-  Serial.println(F("---- Relatório de presença ----"));
+  Serial.println(F("---- Relatório de presença ----"));   //Mostra a lista de chamada ao receber o comando no serial
   for (int i = 0; i < studentCount; i++) {
     Serial.print(students[i].name);
     Serial.print(" - ");
@@ -210,7 +210,7 @@ void beepBuzzer() {
 
 
 void dumpNewUID() {
-  if (rfid.PICC_IsNewCardPresent() && rfid.PICC_ReadCardSerial()) {
+  if (rfid.PICC_IsNewCardPresent() && rfid.PICC_ReadCardSerial()) {   //comando para mostrar UID de uma tag. Usado para configurar tags
     Serial.print(F("{"));
     for (byte i = 0; i < rfid.uid.size; i++) {
       Serial.print(F("0x"));
