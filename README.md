@@ -44,7 +44,7 @@ Não é possível elaborar o circuito no tinkercad pois este software não conta
 |                        | −              | GND                 | Terra                      |
 
 # Circuito no Protoboard - Vista Superior
-![Circuito_Arduino1](https://github.com/user-attachments/assets/81a39709-0da9-44fd-9b58-af4a0571cbe6)
+![Circuito_Arduino1](https://github.com/user-attachments/assets/3ee80f93-8c2f-4cbb-aec0-f455463efbc0)
 
 # Circuito no Protoboard - Vista Frontal
 ![Circuito_Arduino2](https://github.com/user-attachments/assets/2b4f12f5-6067-4ce5-ab4b-1ae93a61e205)
