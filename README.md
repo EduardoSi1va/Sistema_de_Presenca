@@ -56,7 +56,7 @@ Descrição do circuit contendo a ligação de todos os pinos:
 # Vídeo do funcionamento
 Link do youtube: https://youtube.com/shorts/wO78POOzBGw?feature=share
 
-# Código Utilizado
+# Código
 
 ```
 #include <SPI.h>
