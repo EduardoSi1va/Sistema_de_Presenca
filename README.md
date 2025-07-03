@@ -26,7 +26,10 @@ Optamos por desenvolver um sistema de controle de presença através de tags e s
 | Total |   | R$ 118,20 |
 
 # Circuito do projeto
-Não é possível elaborar o circuito no tinkercad pois este software não conta com alguns dos componentes utilizados. O circuito, porém, está descrito na seguinte abaixo, que contém a ligação de todos os pinos:
+
+![Circuito no tinkercad](https://github.com/user-attachments/assets/374e0dd4-f5e7-4066-9805-f9aa9d971d74)
+
+Descrição do circuit contendo a ligação de todos os pinos:
 | Módulo/Função          | Pino no Módulo | Pino no Arduino Uno | Observações                |
 |------------------------|----------------|---------------------|----------------------------|
 | **RC522 RFID**         | SDA / SS       | D10                 | `SS_PIN` (SPI SS)          |
