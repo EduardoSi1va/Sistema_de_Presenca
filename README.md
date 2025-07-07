@@ -59,6 +59,10 @@ Link do youtube: https://youtube.com/shorts/wO78POOzBGw?feature=share
 # Código
 
 ```
+//para cadastrar novos alunos, seguir os seguintes passos
+//1 - descomentar a funcao dumpNewId() na main e mandar para a placa. agora, ao ler uma tag, será exibido o UID dela no serial
+//2 - comentar novamente a funçao
+//3 - adicionar um novo elemento no array Students[], seguindo o padrão dos já disponíveis e mudando as informaçoes(primeiro UID da tag, depois nome, turma e por fim deixar "false" no fim). sugerido copiar e colar uma linha e ir mudando as informacoes
 #include <SPI.h>
 #include <MFRC522.h>
 #include <Wire.h>
